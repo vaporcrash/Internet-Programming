@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table {
+                font-family: 'Courier New';
+                border-collapse: collapse;
+                width: 100%;
+            }
+            
+            td, th {
+                border: 1px solid #ffffff;
+                text-align : center;
+                padding: 8px;
+            }
+            
+            tr:nth-child(even) {
+                background-color: #ffffff;
+            }
+
+            .center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+            }
+
+            .footer {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                color: white;
+                text-align: center;
+            }
+        </style>
+        <title> International Conference </title>
+    </head>
+    <body style = "font-family:'Courier New'; color : white;" bgcolor = "black" >
+        <h1 style = "text-align : center;"> <img src = "logo.jpg" width = "84" height = "42" style = "float:left"> Registration Page </h1>
+        <table>
+            <tr>
+                <td> <a href = "file:///home/avinash/Desktop/IP/Ex1/home.html" title = "Home" style = "color : white;"> Home </a> </td>
+                <td> <a href = "file:///home/avinash/Desktop/IP/Ex1/commitee.html" title = "Commitee" style = "color : white;"> Commitee </a> </td>
+                <td> <a href = "file:///home/avinash/Desktop/IP/Ex1/cfp.html" title = "Call for paper" style = "color : white;"> Call for paper </a> </td>
+                <td> <a href = "file:///home/avinash/Desktop/IP/Ex1/impdate.html" title = "Important Dates" style = "color : white;"> Important Dates </a> </td>
+                <td> <a href = "file:///home/avinash/Desktop/IP/Ex1/workshop.html" title = "Workshops" style = "color : white;"> Workshops </a> </td>
+                <td> <a href = "file:///home/avinash/Desktop/IP/Ex1/reg.html" title = "Registartion" style = "color : white;"> Registartion </a> </td>
+                <td> <a href = "file:///home/avinash/Desktop/IP/Ex1/contact.html" title = "Contact" style = "color : white;"> Contact </a> </td>
+            </tr>
+        </table>
+        <p style = "text-align: center;"> Register for the International Conference Berlin 2021! </p>
+        <form action = "file:///home/avinash/Desktop/IP/Ex1/home.html" style = "text-align: center;">
+            <p>Please fill in this form to create an account.</p>
+            <hr>
+            
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" id="email" required>
+            
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+        
+            <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+            <hr>
+        
+            <p> By creating an account you agree to our Terms & Privacy. </p>
+            <button type="submit" class="registerbtn">Register</button>
+          </form>
+        <div class="footer">
+            <p style = "text-align: center;"> Designed by Avinash Kartik </p>
+        </div>
+    </body>
+</html>

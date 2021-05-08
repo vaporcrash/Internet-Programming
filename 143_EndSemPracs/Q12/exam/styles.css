@@ -1,0 +1,38 @@
+body{
+  font-family: 'helvetica neue'
+}
+
+.login_box{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background-color: grey;
+  width: 20%;
+  text-align: center;
+  border-radius: 14px;
+  padding: 30px
+}
+
+label{
+  padding: 10px;
+}
+
+input[type="submit"]{
+  height: auto;
+  width: auto;
+  padding: 10px;
+  background-color: green;
+  border-radius: 14px;
+  border: none;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+
+input[type="text"]{
+  border-radius: 14px;
+  padding: 10px;
+  border: none;
+}

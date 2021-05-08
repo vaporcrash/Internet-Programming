@@ -1,0 +1,58 @@
+[
+    {
+        "_id": "609617e7f407da305c5eed7f",
+        "reg": "5255",
+        "cname": "Leo",
+        "vtype": "Hatchback",
+        "model": "Polo",
+        "color": "Blue"
+    },
+    {
+        "_id": "609617e7f407da305c5eed81",
+        "reg": "4566",
+        "cname": "Jack",
+        "vtype": "Hatchback",
+        "model": "Swift",
+        "color": "Black"
+    },
+    {
+        "_id": "609617e7f407da305c5eed7d",
+        "reg": "1478",
+        "cname": "John",
+        "vtype": "Sedan",
+        "model": "Fiesta",
+        "color": "Red"
+    },
+    {
+        "_id": "609617e7f407da305c5eed80",
+        "reg": "9876",
+        "cname": "Mary",
+        "vtype": "Sedan",
+        "model": "Vento",
+        "color": "Silver"
+    },
+    {
+        "_id": "609617e7f407da305c5eed82",
+        "reg": "7869",
+        "cname": "David",
+        "vtype": "Sedan",
+        "model": "Rapid",
+        "color": "Yellow"
+    },
+    {
+        "_id": "609617e7f407da305c5eed7e",
+        "reg": "2346",
+        "cname": "Kate",
+        "vtype": "Suv",
+        "model": "Ecosport",
+        "color": "Green"
+    },
+    {
+        "_id": "609617e7f407da305c5eed83",
+        "reg": "1903",
+        "cname": "Carol",
+        "vtype": "Suv",
+        "model": "Innova",
+        "color": "White"
+    }
+]

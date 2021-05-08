@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Details</title>
+    <link rel="stylesheet" href="style.css">
+    <style media="screen">
+      td{
+        color: purple;
+      }
+      th{
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center;">Patient Details</h1>
+    <table align="center">
+      <tr>
+        <th>Name</th><td id="name"></td>
+      </tr>
+      <tr>
+        <th>Address</th><td id="address"></td>
+      </tr>
+      <tr>
+        <th>Age</th><td id="age"></td>
+      </tr>
+      <tr>
+        <th>DOB</th><td id="dob"></td>
+      </tr>
+      <tr>
+        <th>Gender</th><td id="gender"></td>
+      </tr>
+      <tr>
+        <th>Marital Status</th><td id="marriage"></td>
+      </tr>
+      <tr>
+        <th>Contact</th><td id="phone"></td>
+      </tr>
+      <tr>
+        <th>Addiction</th><td id="addict"></td>
+      </tr>
+    </table>
+    <script type="text/javascript">
+      document.getElementById("name").innerHTML = localStorage.getItem("name");
+document.getElementById("address").innerHTML = localStorage.getItem("address");
+document.getElementById("age").innerHTML = localStorage.getItem("age");
+document.getElementById("dob").innerHTML = localStorage.getItem("dob");
+document.getElementById("gender").innerHTML = localStorage.getItem("gender");
+document.getElementById("marriage").innerHTML = localStorage.getItem("marriage");
+document.getElementById("phone").innerHTML = localStorage.getItem("phone");
+document.getElementById("addict").innerHTML = localStorage.getItem("addict");
+
+    </script>
+  </body>
+</html>

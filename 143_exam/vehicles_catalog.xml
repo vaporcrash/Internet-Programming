@@ -1,0 +1,37 @@
+<catalog>
+  <vehicle>
+    <reg>1074</reg>
+    <name>John</name>
+    <type>Sedan</type>
+    <model>Fiesta</model>
+    <color>Red</color>
+  </vehicle>
+  <vehicle>
+    <reg>1976</reg>
+    <name>Mary</name>
+    <type>SUV</type>
+    <model>Ecosport</model>
+    <color>Blue</color>
+  </vehicle>
+  <vehicle>
+    <reg>1432</reg>
+    <name>Leo</name>
+    <type>Sedan</type>
+    <model>Vento</model>
+    <color>Silver</color>
+  </vehicle>
+  <vehicle>
+    <reg>1576</reg>
+    <name>Kate</name>
+    <type>Hatchback</type>
+    <model>Polo</model>
+    <color>Green</color>
+  </vehicle>
+  <vehicle>
+    <reg>1345</reg>
+    <name>Vincent</name>
+    <type>SUV</type>
+    <model>Innova</model>
+    <color>White</color>
+  </vehicle>
+</catalog>

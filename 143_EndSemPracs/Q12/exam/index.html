@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="login_box">
+      <h2>Sign Up!</h2>
+      <form action="LoginServlet" method="post">
+        <label for="email">Email</label>
+        <input type="text" name="username" placeholder="Enter your email" value="" pattern="[a-zA-Z0-9]+@[a-zA-Z]+[.][a-z]+"><br><br>
+        <label for="pass">Password</label>
+        <input type="text" name="pass" value="" placeholder="Enter Password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*]).{9,}"><br><br>
+        <input type="submit" name="" value="Submit">
+      </form>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body onload="startTime()">
+    <div id="txt"></div>
+    <h1>Register Here!</h1>
+    <form  action="/action_page.php" style = "text-align: center;" method="post" id="regform">
+      <label for="name">Name</label><br>
+      <input type="text" id="name" name="name" placeholder="Name" minlength="1" required ><br>
+      <label for="Address">Address</label><br>
+      <textarea name="Address" id="Address" placeholder="Address" required rows="8" cols="80"></textarea><br>
+      <label for="Age">Age</label><br>
+      <input type="number" name="Age" id="Age" placeholder="Age" min="1" onblur="ageBlur(this)" onfocus="onFocus(this)"><br>
+      <label id="check-age" style="display: none">Enter valid age!</label><br>
+      <label for="DOB">Date of Birth</label><br>
+      <input type="date" name="DOB" id="DOB" placeholder="Date of birth" required value=""><br>
+      <label for="gender">Gender</label><br>
+      <input id="male" type="radio" name="gender" value="Male"><label for="male">Male</label>
+      <input id="female" type="radio" value="Female" name="gender"><label for="female">Female</label>
+      <input type="radio" id="other" name="gender" value="Other"><label for="other">Other</label><br>
+      <label for="marriage">Marital Status</label><br>
+      <select name="marriage" id="marriage" required>
+        <option value="Single">Single</option>
+        <option value="Married">Married</option>
+      </select><br>
+      <label for="phone">Phone Number</label><br>
+      <input type="text" name="phone" id="phone" placeholder="Phone Number" minlength="10" onblur="numBlur(this)" onfocus="onFocus(this)" required><br>
+      <label id="check-phone" style="display: none">Enter valid number!</label><br>
+      <table><br>
+        <label for="addict">Addiction</label><br>
+        <textarea name="addict" id="addict" placeholder="Addictions"></textarea><br>
+        <ul id="addict">
+            <li class="dropzone" id="0" draggable="true">Alcohol </li>
+            <li class="dropzone" id="1" draggable="true">Drugs </li>
+            <li class="dropzone" id="2" draggable="true">Electronics </li>
+            <li class="dropzone" id="3" draggable="true">Other </li>
+        </ul><br>
+        <tr>
+          <input type="submit" value="Submit" id="Sumbit" onclick="submitForm()"/>
+          <input type="reset" value="Reset" onclick="myReset()"/><br>
+        </tr>
+      </table>
+
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>

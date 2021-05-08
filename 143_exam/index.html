@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Vehicles</title>
+    <style media="screen">
+      table,th,td{
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th,td{
+        padding:10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="heading">Vehicles Catalog</h1>
+    <button type="button" name="button1" onclick="loadDoc()">Table</button>
+    <button type="button" name="button2" onclick="display()">Navigate</button>
+    <button type='button' onclick='previous()'>Previous</button>
+    <button type='button' onclick='next()'>Next</button>
+    <br><br>
+    <table id="demo"></table>
+    <script>
+      var j=0;
+      function loadDoc(){
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function(){
+          if(this.readyState == 4 && this.status == 200){
+            myFirstFunction(this);
+
+          }
+        };
+        xhttp.open("GET","vehicles_catalog.xml",true);
+        xhttp.send();
+      }
+
+      function myFirstFunction(xml){
+        var i;
+        var xmlDoc = xml.responseXML;
+        var table = "<tr><th>Vehicle Type</th><th>Registration Number</th></tr>";
+        var x = xmlDoc.getElementsByTagName("vehicle");
+        for(i=0;i<x.length;i++){
+          table+="<tr><td>" + x[i].getElementsByTagName("type")[0].childNodes[0].nodeValue + "</td><td>" + x[i].getElementsByTagName("reg")[0].childNodes[0].nodeValue + "</td></tr>"
+        }
+        document.getElementById("demo").innerHTML = table;
+      }
+      function display(){
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function(){
+          if(this.readyState == 4 && this.status == 200){
+            navigate(this,j);
+
+          }
+        };
+        xhttp.open("GET","vehicles_catalog.xml",true);
+        xhttp.send();
+      }
+      function navigate(xml,i){
+
+        var xmlDoc = xml.responseXML;
+        var table = "<tr><th>Customer Name</th><th>Vehicle Type</th><th>Model</th></tr>";
+        var x = xmlDoc.getElementsByTagName("vehicle");
+
+          table+="<tr><td>" + x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue + "</td><td>" + x[i].getElementsByTagName("type")[0].childNodes[0].nodeValue + "</td><td>" + x[i].getElementsByTagName("model")[0].childNodes[0].nodeValue + "</td></tr>"
+
+        document.getElementById("demo").innerHTML = table;
+
+      }
+
+      function next(){if(j<5){j++;display(j);}}
+      function previous(){if(j>0){j--;display(j);}}
+    </script>
+  </body>
+</html>
