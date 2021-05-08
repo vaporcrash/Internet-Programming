@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Autocomplete</title>
+</head>
+<body>
+	<label for="country">Country : </label>
+	<input type="text" name="country" list="countrylist" onkeyup="listCountries(this.value)">
+	<datalist id="countrylist">
+	</datalist>
+	<script>
+		function listCountries(input)
+		{
+			if(input === "")
+				return;
+			xmlhttp = new XMLHttpRequest();
+			xmlhttp.onreadystatechange = function() 
+			{
+			    if (this.readyState == 4 && this.status == 200)
+			    {
+			      document.getElementById("countrylist").innerHTML = this.responseText;
+			    }
+			}
+			xmlhttp.open("GET", "/a6/search?inp="+input);
+  			xmlhttp.send();
+		}
+	</script>
+</body>
+</html>

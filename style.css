@@ -1,0 +1,42 @@
+body {
+    background: url("img1.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.center-box {
+    width: 500px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    font-family: menlo;
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.grid-container > div {
+    background-color: aquamarine;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 5px;
+}

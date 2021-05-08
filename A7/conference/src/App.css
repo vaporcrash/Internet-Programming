@@ -1,0 +1,47 @@
+.title {
+  text-align: center;
+  color:white;
+  padding-top: 30px;
+
+}
+.nav ul {
+  margin: 0;
+}
+
+.nav li {
+  display: inline;
+}
+
+.nav a {
+  display: inline-block;
+  padding: 0.5em;
+  color: white;
+  text-decoration: none;
+}
+
+.main-nav {
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: lighter;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.6);
+  background-image: black;
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+.main-nav li {
+  padding: 0 2.5%;
+}
+
+.nav a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+body{
+  background: linear-gradient(45deg, rgba(29,224,153,0.8), rgba(29,200,205,0.8)), url(images/waterfall.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  text-align: center;
+}
